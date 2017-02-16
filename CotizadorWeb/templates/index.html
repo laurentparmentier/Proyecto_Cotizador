@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{titulo}}</h1>
+
+<div class="row">
+    {% for obj in lista_objetos %}
+
+  <div class="col-sm-6 ">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3><a href="{{ obj.get_absolute_url }}">{{obj.cliente}}{{obj.id}}</a><small>{{obj.fecha_de_creacion}}</small></h3>
+        <p>{{obj.total}}<br/>
+            {{obj.id}}<br/></p>
+        <p><a href="/consulta/{{obj.id}}" class="btn btn-primary" role="button">Detalle</a> 
+      </div>
+    </div>
+  </div>
+
+
+    {% endfor %}
+
+<h1>INDEX</h1>
+
+<p>Aquí últimas 5 cotizaciones realizadas por el usuario.</p>
+
+{% endblock %}

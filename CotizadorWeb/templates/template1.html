@@ -1,0 +1,22 @@
+<!--DOCTYPE html-->
+
+<html>
+
+
+<header>
+  <h1> CAD SPORT </h1>
+</header>
+  <body>
+    <h1>{{titulo}}</h1>
+    {% for obj in lista_objetos %}
+    {{obj.empresa}}<br/>
+     <a href="{{ obj.get_absolute_url }}">{{obj.cliente}}</a><br/>
+    {{obj.vendedor}}<br/>
+    {{obj.fecha_de_creacion}}<br/>
+    {{obj.fecha_de_modificacion}}<br/>
+    {{obj.total}}<br/>
+    
+    {% endfor %}
+  </body>
+  
+</html>

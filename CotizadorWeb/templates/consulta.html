@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>{{titulo}}</h2>
+    {{instance.cliente}}<br/>
+    {{instance.total}}<br/>
+    {{instance.observaciones}}<br/>
+    {{instance.id}}<br/>
+    <br/>
+    
+    {% for prod in lista_productos %}
+    {{prod.producto}}<br/>
+    {{prod.cantidad}}<br/>
+    <p><a href="/pdf/"> PDF </a></p>
+
+{% endfor %}
+{% endblock %}

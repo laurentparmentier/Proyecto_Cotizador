@@ -1,0 +1,33 @@
+{% extends "base.html" %}}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+
+ <h1>{{titulo}}</h1>
+
+    <form method="POST" action=''>
+    {% csrf_token %}
+    {{formset.management_form}}
+
+    {% for form in formset %}
+    <div class="product-formset">
+
+    {{form.as_table}}
+    {{ form.DELETE }}
+
+    </div>
+
+    {% endfor %}
+
+    <input type="submit" value='Agregar' name="Siguiente"/>
+    </form>
+
+    <p><a href="/pdf/"> PDF </a></p>
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,58 @@
+#container{
+    background-color:gray;
+}
+
+#header {
+    background-color:black;
+    padding:5px;
+	height:75px;
+}
+
+#subheader{
+    background-color:#f2f2f2;
+    text-align:left;
+    padding:5px;
+}
+
+#titulo{
+	float:left;
+	color:white;
+}
+
+#usuario{
+	float:right;
+	align:right;
+	text-align:right;
+	padding:10px;
+	color:white;
+}
+
+#section {
+    width:450px;
+    float:center;
+    padding:10px;
+}
+
+
+
+#id_iva{
+	padding:10px;
+}
+#id_subtotal{
+	padding:10px;
+}
+#id_fecha{
+	
+}
+
+#SubmitOptions{
+	padding:15px;
+	background-color:white;
+}
+
+#footer{
+	background-color:black;
+	text-align:left;
+	padding:5px;
+	color:white;
+}
